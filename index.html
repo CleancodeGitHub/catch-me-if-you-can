@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Catch Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<!-----------------ACHIEVEMENT----------->
+
+<body>
+    <script src="sound.js"></script>
+    <script src="mai.js"></script>
+    <div id="achieveLabel">Achieve : 00</div>
+    <div id="title">Catch Me If You Can</div>
+    <div id="game1">
+        <div id="myDiv"></div>
+    </div>
+    <legend id="Sounds">
+        <!-------------------MUSIC---------------->
+        <audio id="myAudio">
+            <source src="Gaming .mp3" type="audio/ogg">
+        </audio>
+        <!-- button -->
+        <button class="button" onclick="play()" type="button">Music</button>
+        <button class="button" onclick="pause()" type="button">Stop music</button>
+    </legend>
+    <script>
+    let mp = document.getElementById("myAudio");
+
+    function play() {
+        mp.play();
+    }
+
+    function pause() {
+        mp.pause();
+    }
+    </script>
+</body>
+
+</html>
